@@ -6,6 +6,9 @@ from mixer.backend.sqlalchemy import Mixer as _mixer
 from sqlalchemy import create_engine
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
+import traceback as tb
+
+tb.print_exc()
 
 try:
     from app.main import app
